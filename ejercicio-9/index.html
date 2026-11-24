@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <label for="nombre">Ingresa tu nombre: </label>
+      <br />
+      <input type="text" id="nombre" />
+      <br />
+      <label for="profesion">Ingrese su profesión</label>
+      <br />
+      <input type="text" id="profesion" />
+      <br />
+      <label for="foto">Ingrese la URL de la foto:</label>
+      <br />
+      <input type="url" id="foto"/>
+    </form>
+    <br />
+    <div>
+      <div class="card">
+        <img
+          src=""
+          class="card-img-top"
+          alt="Tu imagen"
+          id="fotoCard"
+        />
+        <div class="card-body">
+          <h5 class="card-title" id="nombreCard">Tu nombre</h5>
+          <h5 class="card-title" id="profesionCard">Tu profesión</h5>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
