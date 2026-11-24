@@ -1,0 +1,23 @@
+.circulo {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    border-radius: 50%;
+    filter: brightness(30%);
+}
+
+.circulo-y{
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    border-radius: 50%;
+    filter: brightness(30%);
+}
+
+.circulo-g{
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    border-radius: 50%;
+    filter: brightness(30%);
+}
