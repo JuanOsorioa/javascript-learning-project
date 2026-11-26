@@ -1,21 +1,23 @@
-let campo = document.getElementById("campo");
+const campo = document.getElementById("campo");
 const boton = document.getElementById("boton");
-let numero = document.getElementsByClassName("numero");
-let resultado = document.querySelectorAll("#resultado")
-let n2 = document.querySelectorAll("#n2");
+const numero = document.querySelectorAll(".numero");
+const resultado = document.querySelectorAll(".resultado");
+const n2 = document.querySelectorAll(".n2");
 
-boton.addEventListener("click", function generar(){
-    let n = Number(campo.value);
-    console.log(typeof(n));
-    for (let i = 0; i <= numero.length; i++){
+boton.addEventListener("click", function generar() {
+    const n = Number(campo.value);
+
+    if (campo.value === "" || !Number.isInteger(n) || n < 1 || n > 10) {
+        campo.setCustomValidity("Ingresa un número entero del 1 al 10");
+        campo.reportValidity();
+        return;
+    }
+
+    campo.setCustomValidity("");
+
+    for (let i = 0; i < numero.length; i++) {
         numero[i].textContent = n;
+        resultado[i].textContent = n * Number(n2[i].textContent);
     }
-
-    for (j = 0; j <= resultado.length; j++){
-        console.log(n2[j])
-        resultado[j].textContent = n * n2[j];
-    }
-    
-    
 });
 
